@@ -1861,6 +1861,9 @@ input, textarea, select, button {
 
 .main .catalog .categories-box-head .categories-head-product .product__name {
   color: #333333;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
 }
 
 .main .catalog .categories-box-head .categories-head-product .product__count {
