@@ -141,22 +141,4 @@ const banner = new Swiper('.swiper-banner', {
         mapInfo.classList.add('showMapInfo');
       });
 
-  const minus = document.querySelectorAll('.amount-minus'),
-        plus = document.querySelectorAll('.amount-plus'),
-        amountNum = document.querySelector('.amount-val');
-
-plus.forEach(add => {
-  add.addEventListener('click', () => {
-    add.previousElementSibling.value++
-});
-})
-
-minus.forEach(rem => {
-  rem.addEventListener('click', () => {
-    if(rem.nextElementSibling.value > 1) {
-      rem.nextElementSibling.value--
-    }
-});
-});
-
 

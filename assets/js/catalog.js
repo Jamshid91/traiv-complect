@@ -1,7 +1,7 @@
 const options = document.querySelectorAll('.type-select .option'),
       typeHeads = document.querySelectorAll('.type-head'),
       showSelect = document.querySelectorAll('.show-select'),
-      clearAllCheck = document.querySelector('.clear-all-check')
+      clearAllCheck = document.querySelectorAll('.clear-all-check')
 
 
 options.forEach(option => {
@@ -31,29 +31,13 @@ showSelect.forEach(btn => {
     });
 });
 
-clearAllCheck.addEventListener('click', () => {
-    options.forEach(option => {
-        option.classList.remove('checked')
+clearAllCheck.forEach(clear => {
+    clear.addEventListener('click', () => {
+        options.forEach(option => {
+            option.classList.remove('checked')
+        });
     });
-});
-
-const minus = document.querySelectorAll('.amount-minus'),
-plus = document.querySelectorAll('.amount-plus'),
-amountNum = document.querySelector('.amount-val');
-
-plus.forEach(add => {
-add.addEventListener('click', () => {
-add.previousElementSibling.value++
-});
 })
-
-minus.forEach(rem => {
-rem.addEventListener('click', () => {
-if(rem.nextElementSibling.value > 1) {
-rem.nextElementSibling.value--
-}
-});
-});
 
 
 
@@ -83,4 +67,23 @@ gridMob_btn.addEventListener('click', () => {
         elem.classList.toggle('product_row')
     });
     gridMob_btn.classList.toggle('clickedBtn')
-})
+});
+
+
+const closeFilter = document.querySelector('.close-filter'),
+      backFilter = document.querySelector('.back-filter'),
+      filterBtn = document.querySelector('.filter-btn'),
+      filterMenu = document.querySelector('.filter-menu');
+
+filterBtn.addEventListener('click', () => {
+    filterMenu.classList.remove('d-none')
+});
+
+closeFilter.addEventListener('click', () => {
+    filterMenu.classList.add('d-none')
+});
+backFilter.addEventListener('click', () => {
+    filterMenu.classList.add('d-none')
+});
+
+
