@@ -3129,6 +3129,379 @@ input, textarea, select, button {
   right: -15px;
 }
 
+.main .title-text {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #0F0F0F;
+  margin-bottom: 24px;
+}
+
+.main .subtitle {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+}
+
+.main .post-page {
+  margin: 24px 0 100px;
+}
+
+.main .post-img {
+  background: #0000000D;
+  display: block;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+}
+
+.main .post-img img {
+  width: 100%;
+  height: 184px;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.main .post-date {
+  font-size: 14px;
+  line-height: 18px;
+  color: #828282;
+  display: block;
+  margin: 16px 0 8px;
+}
+
+.main .post-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #0F0F0F;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .post-title:hover {
+  color: #EB5200;
+}
+
+.main .post-head {
+  margin-bottom: 48px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.main .post-big {
+  width: 75%;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.main .post-big::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -15px;
+  height: 100%;
+  width: 1px;
+  background: #DDDDDD;
+}
+
+.main .post-big .post-img img {
+  height: 510px;
+}
+
+.main .post-big .post-title {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.main .right-posts {
+  width: 25%;
+  padding-left: 30px;
+}
+
+.main .right-posts .post {
+  padding-bottom: 30px;
+}
+
+.main .posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 48px;
+  overflow: hidden;
+}
+
+.main .posts .post {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.main .posts .post::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  height: 1px;
+  width: 120%;
+  background: #DDDDDD;
+}
+
+.main .pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .pagination li {
+  margin-right: 8px;
+}
+
+.main .pagination li:last-child {
+  margin-right: 0;
+}
+
+.main .pagination li a {
+  width: 32px;
+  height: 32px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: 1px solid #DDDDDD;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #333333;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .pagination li a:hover {
+  color: #FF6600;
+  border-color: #FF6600;
+}
+
+.main .pagination li .active {
+  color: #FF6600;
+  border-color: #FF6600;
+}
+
+.main .pagination li .prev-btn:hover, .main .pagination li .next-btn:hover {
+  background: #828282;
+  border-color: #828282;
+}
+
+.main .pagination li .prev-btn:hover svg path, .main .pagination li .next-btn:hover svg path {
+  fill: #DDDDDD;
+}
+
+.main .article-posts {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.main .article-posts .post-img img {
+  height: 240px;
+}
+
+.main .post-info .subtitle {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 8px;
+}
+
+.main .post-info .date, .main .post-info view {
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+
+.main .post-info .post-info-img {
+  width: 100%;
+  height: 336px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 32px 0;
+}
+
+.main .post-info__title {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.main .post-info__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.main .post-info-list li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main .post-info-list li:last-child {
+  margin-bottom: 16px;
+}
+
+.main .post-info-list li::before {
+  content: '\2022';
+  margin-right: 8px;
+}
+
+.main .post-info .post-info-img_text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #828282;
+  margin: 16px 0 32px;
+}
+
+.main .post-info .social {
+  margin-top: 32px;
+  border-top: 1px solid #DDDDDD;
+  padding-top: 32px;
+}
+
+.main .post-info .social .subtitle {
+  border: none;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.main .post-info .social-list li {
+  margin: 0 12px 16px 0;
+}
+
+.main .post-info .social-list li a svg {
+  width: 33px;
+  height: 32px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+
+.main .post-info .social-list li a:hover svg path {
+  fill: #0F0F0F;
+}
+
+.main .post-info .social-list li a:hover svg .abs {
+  fill: #fff !important;
+}
+
+.main .content {
+  border: 1px solid #DDDDDD;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 32px 24px;
+  max-width: 410px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 170px;
+}
+
+.main .content-title {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.main .content-list li {
+  margin-top: 16px;
+}
+
+.main .content-list li:hover {
+  color: #828282;
+}
+
+.main .articles {
+  margin-top: 80px;
+}
+
+.main .articles .subtitle {
+  margin-bottom: 40px;
+}
+
+.main .articles .swiper-btns .btn:first-child {
+  left: 0;
+}
+
+.main .articles .swiper-btns .btn:last-child {
+  right: 0;
+}
+
+.main .articles .post-img img {
+  height: 240px;
+}
+
+.scrollUp {
+  position: fixed;
+  right: 64px;
+  top: 80%;
+  width: 54px;
+  height: 54px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 1px solid #DDDDDD;
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+
+.scrollUp:hover {
+  background: #DDDDDD;
+}
+
 .footer {
   background: #F9F9F9;
   padding: 64px 0 50px;
@@ -3443,6 +3816,26 @@ input, textarea, select, button {
     width: 100%;
     margin-top: 24px;
   }
+  .main .post-big {
+    width: 66%;
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .main .post-big .post-img img {
+    height: 400px;
+  }
+  .main .right-posts {
+    width: 33%;
+    padding-left: 30px;
+  }
+  .main .posts {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .main .article-posts {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
   .footer {
     padding: 55px 0 40px;
   }
@@ -3739,6 +4132,17 @@ input, textarea, select, button {
     line-height: 21px;
     margin: 8px 0 16px;
   }
+  .main .title-text {
+    font-size: 28px;
+    line-height: 38px;
+    margin: 0 0 24px;
+  }
+  .main .head-page {
+    margin: 0 0 16px;
+  }
+  .main .post-page {
+    margin: 16px 0 56px;
+  }
   .main .product-page .product-head .product__name {
     font-size: 20px;
     line-height: 27px;
@@ -3786,6 +4190,50 @@ input, textarea, select, button {
   }
   .main .product-page .description-tabs-body .tab_4 {
     width: 100%;
+  }
+  .main .post-big {
+    display: none;
+  }
+  .main .post-head {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  .main .right-posts {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+  .main .posts {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;
+  }
+  .main .posts .post {
+    padding: 0;
+  }
+  .main .posts .post::after {
+    display: none;
+  }
+  .main .subtitle {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .main .post-info .post-info-img {
+    height: 240px;
+  }
+  .main .post-info .content {
+    max-width: 100%;
+  }
+  .main .post-info .social-list li {
+    margin-right: 24px;
+  }
+  .main .post-info .social-list li a {
+    min-width: 48px;
+  }
+  .main .post-info .social-list li a svg {
+    width: 48px;
+    height: 48px;
   }
   .footer-item {
     width: 100%;

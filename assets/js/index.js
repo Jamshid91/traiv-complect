@@ -36,8 +36,8 @@ const banner = new Swiper('.swiper-banner', {
       1200: {
         slidesPerView: 5,
       },
-}
-  });
+  }
+});
 
 
   const special = new Swiper('.swiper-special', {

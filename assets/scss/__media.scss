@@ -282,6 +282,29 @@
         }
       }
     }
+
+    .post-big {
+      width: 66%;
+      position: relative;
+      padding-bottom: 40px;
+      .post-img {
+        img {
+          height: 400px;
+        }
+      }
+    }
+    .right-posts {
+      width: 33%;
+      padding-left: 30px;
+    }
+
+    .posts {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .article-posts {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   .footer {
@@ -627,6 +650,17 @@
       }
     }
 
+    .title-text {
+      font-size: 28px;
+      line-height: 38px;
+      margin: 0 0 24px;
+    }
+    .head-page {
+      margin: 0 0 16px;
+    }
+    .post-page {
+      margin: 16px 0 56px;
+    }
     .product-page {
       .product {
         &-head {
@@ -684,6 +718,59 @@
           }
           .tab_4 {
             width: 100%;
+          }
+        }
+      }
+    }
+
+    .post-big {
+      display: none;
+    }
+    .post-head {
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+    .right-posts {
+      width: 100%;
+      padding-left: 0;
+      margin-bottom: 24px;
+    }
+
+    .posts {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 24px;
+      .post {
+        padding: 0;
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .subtitle {
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    .post-info {
+      .post-info-img {
+        height: 240px;
+      }
+      .content {
+        max-width: 100%;
+      }
+      .social {
+        &-list {
+          li {
+            margin-right: 24px;
+            a {
+              min-width: 48px;
+              svg {
+                width: 48px;
+                height: 48px;
+              }
+            }
           }
         }
       }
